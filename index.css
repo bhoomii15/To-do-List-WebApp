@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    background-color: #bdd5ea;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+header {
+    padding: 20px;
+    max-width: 800px;
+    width: 100;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 33px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+#new-task-form {
+    display: flex;
+}
+
+
+#NTinput {
+    flex: content;
+    background-color: #f7f7ff;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px bold black;
+    border-radius: 8px;
+}
+
+#NTsubmit {
+    flex: 1 1 0%;
+    background-color: #f0e6d1;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px bold black;
+    border-radius: 8px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#NTsubmit:hover {
+    opacity: 0.8;
+}
+
+#NTsubmit:active {
+    opacity: 0.6;
+}
+
+main {
+    flex: 1 1 0%;
+    padding: 10px;
+    max-width: 800px;
+    width: 340px;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding: 10px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tasks .task .content .text {
+    color: black;
+    font-size: 16px;
+    width: 170px;
+    transition: 0.4s;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+#tasks .task .content .text:not(:read-only) {
+    color: #560bad;
+}
+
+#tasks .task .actions {
+    display: flex;
+    margin: 2px;
+}
+
+.task .actions button {
+    cursor: pointer;
+    height: 24px;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.task .actions button:hover {
+    opacity: 0.8;
+}
+
+.task .actions button:active {
+    opacity: 0.6;
+}
+
+.task .actions .edit {
+    background-color: #4895ef;
+}
+
+.task .actions .delete {
+    background-color: #fe5f55;
+}
